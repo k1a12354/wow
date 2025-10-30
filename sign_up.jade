@@ -1,0 +1,16 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    title Sign Up
+  body
+    h1 Sign Up
+    form(action='/sign_up' method='post')
+      p
+        input(type='text' name='username' placeholder='Username' required)
+      p
+        input(type='password' name='password' placeholder='Password' required)
+      p
+        input(type='submit' value='Sign Up')
+    p
+      a(href="/sign_in") Already have an account? Sign In
