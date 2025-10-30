@@ -1,0 +1,16 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    title Login Page
+  body
+    h1 로그인 페이지
+    form(action='/sign_in' method='post')
+      p
+        input(type='text' name='username' placeholder='아이디 입력' required)
+      p
+        input(type='password' name='password' placeholder='비밀번호 입력' required)
+      p
+        input(type='submit' value='로그인')
+    p
+      a(href="/sign_up") 회원가입
